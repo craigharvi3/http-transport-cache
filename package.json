@@ -10,7 +10,13 @@
   "engines": {
     "node": ">=4.0.0"
   },
-  "keywords": ["http-transport", "caching", "http", "client", "middleware"],
+  "keywords": [
+    "http-transport",
+    "caching",
+    "http",
+    "client",
+    "middleware"
+  ],
   "license": "Apache-2.0",
   "devDependencies": {
     "@bbc/http-transport": "0.x",
@@ -27,6 +33,7 @@
     "sinon": "^4.0.1"
   },
   "dependencies": {
+    "qs": "^6.5.1",
     "wreck": "^12.2.0"
   },
   "eslintConfig": {

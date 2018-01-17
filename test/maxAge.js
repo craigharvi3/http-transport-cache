@@ -41,12 +41,12 @@ function createCache() {
   return cache;
 }
 
-function createCacheClient(catbox) {
-  return httpTransport.createClient().use(cache.maxAge(catbox));
+function createCacheClient(catbox, opts) {
+  return httpTransport.createClient().use(cache.maxAge(catbox, opts));
 }
 
-function requestWithCache(catbox) {
-  return createCacheClient(catbox)
+function requestWithCache(catbox, opts) {
+  return createCacheClient(catbox, opts)
     .get('http://www.example.com/')
     .asResponse();
 }
